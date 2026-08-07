@@ -35,6 +35,10 @@
   margin: 0 auto;
 }
 
+.search-box { width: min(100%, 580px); display: flex; align-items: center; gap: var(--space-sm); margin: var(--space-xl) auto 0; padding: .25rem .45rem .25rem 1rem; color: var(--text-muted); background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-full); transition: border-color var(--transition-fast); }
+.search-box:focus-within { border-color: var(--border-accent); box-shadow: var(--shadow-glow); }.search-box input { flex: 1; min-width: 0; padding: .55rem 0; color: var(--text-primary); background: transparent; border: 0; outline: 0; font: inherit; }.search-box button { width: 30px; height: 30px; color: var(--text-secondary); background: var(--bg-glass); border-radius: 50%; font-size: 1.2rem; }
+.top-rated-section { margin: 0 0 var(--space-xl); }.section-heading { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--space-md); }.section-heading h2 { font-size: 1.5rem; }.section-kicker { color: var(--accent-primary); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }.top-rated-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(150px, 190px); gap: var(--space-md); overflow-x: auto; padding: var(--space-xs) 0 var(--space-md); }.catalog-heading { margin-top: var(--space-lg); }.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
+
 /* ===== Genre Filter Bar ===== */
 .genre-bar-wrapper {
   position: sticky;

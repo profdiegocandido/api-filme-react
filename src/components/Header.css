@@ -71,3 +71,8 @@
   color: var(--text-primary);
   background: var(--bg-glass);
 }
+
+.logout-button { background: transparent; }
+.nav-login { border: 1px solid var(--border-accent); color: var(--text-primary); }
+.user-name { color: var(--text-muted); font-size: .85rem; white-space: nowrap; }
+@media (max-width: 760px) { .header-inner { padding: 0 var(--space-md); }.header-nav { gap: var(--space-xs); }.header-nav .nav-link { padding: var(--space-xs); }.user-name { display: none; } }
